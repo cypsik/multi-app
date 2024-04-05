@@ -1,0 +1,66 @@
+@use './variables' as *;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.8rem;
+}
+
+canvas {
+	display: block;
+}
+
+.particles {
+	position: absolute;
+	inset: 0;
+	z-index: -10;
+}
+
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+.login-btn {
+	position: absolute;
+	top: 5rem;
+	right: 5rem;
+	width: 80px;
+	height: 80px;
+	font-size: 1.8rem;
+	border-radius: 10px;
+	cursor: pointer;
+	z-index: 1;
+
+	&:hover {
+		background-color: #20262e;
+	}
+}
+
+.login {
+	position: absolute;
+	inset: 0;
+	opacity: 0;
+	backdrop-filter: blur(10px);
+	background-color: rgb(255 255 255 / 2%);
+	transition: opacity 0.3s ease-in-out;
+
+	&__show {
+		opacity: 1;
+	}
+}

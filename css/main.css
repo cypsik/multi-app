@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+}
+
+canvas {
+  display: block;
+}
+
+.particles {
+  position: absolute;
+  inset: 0;
+  z-index: -10;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.login-btn {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  width: 80px;
+  height: 80px;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+.login-btn:hover {
+  background-color: #20262e;
+}
+
+.login {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.02);
+  transition: opacity 0.3s ease-in-out;
+}
+.login__show {
+  opacity: 1;
+}/*# sourceMappingURL=main.css.map */
