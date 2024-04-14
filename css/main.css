@@ -14,16 +14,6 @@ body {
   font-size: 1.8rem;
 }
 
-canvas {
-  display: block;
-}
-
-.particles {
-  position: absolute;
-  inset: 0;
-  z-index: -10;
-}
-
 .visually-hidden {
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -35,19 +25,14 @@ canvas {
   width: 1px;
 }
 
-.login-btn {
-  position: absolute;
-  top: 5rem;
-  right: 5rem;
-  width: 80px;
-  height: 80px;
-  font-size: 1.8rem;
-  border-radius: 10px;
-  cursor: pointer;
-  z-index: 1;
+canvas {
+  display: block;
 }
-.login-btn:hover {
-  background-color: #20262e;
+
+.particles {
+  position: absolute;
+  inset: 0;
+  z-index: -10;
 }
 
 .login {
@@ -61,4 +46,24 @@ canvas {
 }
 .login__show {
   opacity: 1;
+}
+
+.login-btn {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  width: 8rem;
+  height: 8rem;
+  font-size: 4rem;
+  color: #FBFDFB;
+  background-color: transparent;
+  border: 3px solid #FBFDFB;
+  border-radius: 10px;
+  transition: border-color 0.3s, color 0.3s;
+  cursor: pointer;
+  z-index: 1;
+}
+.login-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 6px 3px #fff;
 }/*# sourceMappingURL=main.css.map */

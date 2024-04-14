@@ -1,0 +1,12 @@
+.login {
+	position: absolute;
+	inset: 0;
+	opacity: 0;
+	backdrop-filter: blur(10px);
+	background-color: rgb(255 255 255 / 2%);
+	transition: opacity 0.3s ease-in-out;
+
+	&__show {
+		opacity: 1;
+	}
+}
