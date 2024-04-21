@@ -7,10 +7,18 @@ $blue: #879DE4;
 $red: #B8755E;
 $green: #C3D74E;
 
-// FONTS
+// FONTS WEIGHTS
 
 $light: 300;
 $normal: 400;
 $medium: 500;
 $semibold: 600;
 $bold: 700;
+
+// Z-INDEX
+
+$zindex: (
+    background: 1000,
+    components: 2000,
+    modal: 3000
+);

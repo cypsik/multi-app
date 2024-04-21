@@ -1,6 +1,6 @@
 @use './base/reset' as *;
-@use './base/background' as *;
 @use './base/body' as *;
+@use './vendors/tsparticles' as *;
 @use './components/utilities' as *;
 @use './components/buttons' as *;
 @use './layout/login' as *;
