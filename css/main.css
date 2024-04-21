@@ -10,8 +10,22 @@
   font-size: 62.5%;
 }
 
+canvas {
+  display: block;
+}
+
+.particles {
+  position: absolute;
+  inset: 0;
+  z-index: -10;
+}
+
 body {
-  font-size: 1.8rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color: #0D0E12;
+  font-size: 1.4rem;
+  -webkit-text-size-adjust: 100%;
 }
 
 .visually-hidden {
@@ -23,29 +37,6 @@ body {
   position: absolute;
   white-space: nowrap;
   width: 1px;
-}
-
-canvas {
-  display: block;
-}
-
-.particles {
-  position: absolute;
-  inset: 0;
-  z-index: -10;
-}
-
-.login {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.02);
-  transition: opacity 0.3s ease-in-out;
-}
-.login__show {
-  opacity: 1;
 }
 
 .login-btn {
@@ -66,4 +57,17 @@ canvas {
 .login-btn:focus-visible {
   outline: none;
   box-shadow: 0 0 6px 3px #fff;
+}
+
+.login {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.02);
+  transition: opacity 0.3s ease-in-out;
+}
+.login__show {
+  opacity: 1;
 }/*# sourceMappingURL=main.css.map */

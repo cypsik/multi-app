@@ -1,0 +1,9 @@
+@use '../abstracts/variables' as *;
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-weight: $normal;
+    color: $dark;
+    font-size: 1.4rem;
+    -webkit-text-size-adjust: 100%; // fix for iOS
+}
